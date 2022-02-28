@@ -5,6 +5,7 @@
   "scripts": {
     "watch": "esbuild --bundle src/index.js --outfile=src/bundle.js",
     "build": "rm -r dist/*; esbuild --bundle src/index.js --outfile=dist/bundle.js && cp src/index.html src/style.css src/aes.js src/ecdh.js src/ecdh.wasm dist/",
+    "buildWin": "rd /s /q dist & esbuild --bundle src/index.js --outfile=dist/bundle.js & for %I in (src\\index.html src\\style.css src\\aes.js src\\ecdh.js src\\ecdh.wasm) do copy %I dist",
     "serve": "npm run watch & cd src; npx http-server -p 8081",
     "serve:dist": "npm run build && cd dist; npx http-server -p 8081",
     "lint": "prettier --write src/"
@@ -13,6 +14,7 @@
     "esbuild": "^0.8.57"
   },
   "devDependencies": {
+    "@types/web-bluetooth": "0.0.12",
     "apexcharts": "^3.24.0",
     "eslint": "^8.7.0",
     "prettier": "^2.2.1"
