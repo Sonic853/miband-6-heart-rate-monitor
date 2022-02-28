@@ -1,8 +1,8 @@
 [Live demo](https://miband-6-heart-rate-monitor.pages.dev/)
 
-# Mi Band 6 Heart Rate Monitor
+# Mi Band 4/5/6 Heart Rate Monitor
 
-Display your Mi Band 6's heart rate in the browser. 
+Display your Mi Band 4/5/6's heart rate in the browser. 
 
 ![Heart rate webapp](img/screenshot.png)
 
@@ -27,6 +27,7 @@ For troubleshooting, check the browser's developer console
 
 ## Inspiration
 
+- [gzalo/miband-6-heart-rate-monitor](https://github.com/gzalo/miband-6-heart-rate-monitor)
 - [Jaapp-/miband-5-heart-rate-monitor](https://github.com/Jaapp-/miband-5-heart-rate-monitor)
 - [satcar77/miband4](https://github.com/satcar77/miband4)
 - [vshymanskyy/miband-js](https://github.com/vshymanskyy/miband-js)
